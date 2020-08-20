@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs') %>
+
+<body>
+   <%- include('./partials/nav.ejs') %>
+   <div>
+       <h2>List of Recipes</h2>
+       <% if (recipes.length > 0) { %>
+        <% recipes.forEach(recipe => {  %>
+          <a href="/recipes/<%= recipe._id %>">
+            <h4 class="name"> <%= recipe.name %> </h4>
+            <p class="url"> <%= recipe.url %></p>
+          </a>       
+       <% }) %>
+       <% } else{ %>
+        <p>There were no recipes found. Add one by clicking <a href="recipes/add">here</a>! </p>
+      <% } %>
+   </div>
+   <%- include('./partials/footer.ejs') %>
+</body>
+</html>

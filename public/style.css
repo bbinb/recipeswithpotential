@@ -1,0 +1,8 @@
+body {
+    width: 85%;
+    max-width: 1200px;
+    background-color: bisque;
+    margin: 5% auto;
+    padding: 2% auto;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}

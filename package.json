@@ -1,0 +1,20 @@
+{
+  "name": "recipeswithpotential",
+  "version": "1.0.0",
+  "description": "recipe blog",
+  "main": "app.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "author": "Ben Bartelt",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "l": "^0.6.0",
+    "lodash": "^4.17.20",
+    "mongoose": "^5.10.0",
+    "morgan": "^1.10.0"
+  }
+}
